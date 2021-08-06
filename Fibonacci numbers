@@ -1,0 +1,14 @@
+def recur_fibonacci(n):
+  if n <= 1:
+    return n
+  else:
+    return(recur_fibonacci(n-1) + recur_fibonacci(n-2))
+  
+  nterms = 10
+  
+  if nterms <= 0:
+    print("positive integer")
+  else:
+    print("Fibonacci numbers:")
+    for x in range(nterms):
+      print(recur_fibonacci(x))
